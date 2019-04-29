@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Weather correlations</title>
+    <title>Max Temperature</title>
     <style>
         nav.navbar {
             background: #F8F9FA;
@@ -88,10 +88,10 @@
             <div class="row">
                 <div class="col-lg-7" style = "background-color:white; margin: 2%; padding:2%;">
                     <h2>Summary: Latitude vs. X <hr></h2>
-                    <img src="lat_vs_temp.png" style="padding: 0 15px; float: left;"><br><br>
+                    <img src="llat_vs_temp.png" width = 100% style="padding: 0 15px; float: left;"><br><br>
                     <h5>
-                     The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.<br> <br>
-                     After assembling the dataset, we used MAtplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provodes the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                     As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg Latitude). More interestingly, however, is the fact that the southem hemisphere tends to be warmer this time of the year than the northem hemisthere. This may be due to the tilt of the earth at the time of the year this data was gathered.<br> <br>
+                     
                     </h5>
                 </div>
 
@@ -99,10 +99,10 @@
                     <h2>Visualizations <hr> </h2>
                     
                     <div class="col-md-12 col-sm-12 text-center">
-                    <img src="lat_vs_temp.png" width = 180>                      
-                    <img src="lat_vs_humidity.png" width = 180>
-                    <img src="lat_vs_cloudiness.png" width = 180>
-                    <img src="lat_vs_windspeed.png" width = 180>
+                    <a href="max_temp.html"> <img src="lat_vs_temp.png" width = 180 style="border:3px solid #0BADA6" ></a>
+                    <a href="humidity.html"><img src="lat_vs_humidity.png" width = 180></a>
+                    <a href="cloudines.html"><img src="lat_vs_cloudiness.png" width = 180></a>
+                    <a href="windspeed.html"><img src="lat_vs_windspeed.png" width = 180></a>
                     </div>                  
                     
                     

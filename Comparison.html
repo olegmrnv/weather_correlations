@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Weather correlations</title>
+    <title>Comparison</title>
     <style>
         nav.navbar {
             background: #F8F9FA;
@@ -28,8 +28,12 @@
         h2 {
             color: #0BADA6;
             font-family:'Times New Roman', Times, serif;
+            font-weight:bold;            
+        }
+        h4 {
+            color: #0BADA6;
+            font-family:'Times New Roman', Times, serif;
             font-weight:bold; 
-            
         }
         h5 {
           line-height: 1.8;
@@ -83,36 +87,52 @@
                 </div>
         </nav>
         
-
-        <div style="margin: 2%;">
-            <div class="row">
-                <div class="col-lg-7" style = "background-color:white; margin: 2%; padding:2%;">
-                    <h2>Summary: Latitude vs. X <hr></h2>
-                    <img src="lat_vs_temp.png" style="padding: 0 15px; float: left;"><br><br>
-                    <h5>
-                     The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.<br> <br>
-                     After assembling the dataset, we used MAtplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provodes the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                    </h5>
+        <div style = "background-color:white; margin: 4%; padding:6%;">
+            <div class = "row" >
+                <div class="col-lg-12">
+                    <h2>
+                        Comparison: Latitude vs X<hr>
+                    </h2>
+                    <h6>Click any plot to get in-depth analysis</h6><br>
                 </div>
-
-                <div class="col-lg-4" style = "background-color:white; margin: 2%; padding:2%;">
-                    <h2>Visualizations <hr> </h2>
-                    
-                    <div class="col-md-12 col-sm-12 text-center">
-                    <img src="lat_vs_temp.png" width = 180>                      
-                    <img src="lat_vs_humidity.png" width = 180>
-                    <img src="lat_vs_cloudiness.png" width = 180>
-                    <img src="lat_vs_windspeed.png" width = 180>
-                    </div>                  
-                    
-                    
-                  </div>
-
-
-
             </div>
 
+            <div class="row text-center">
+                <div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h4>
+                        vs. Max Temperature
+                        <a href="max_temp.html"><img src="llat_vs_temp.png" width = 100%></a>
+                    </h4>
+                </div>
+                <div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h4>
+                        vs. Humidity
+                        <a href="humidity.html"><img src="llat_vs_humidity.png" width = 100%></a>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                    <div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h4>
+                            <br>vs. Claudiness
+                            <a href="cloudines.html"><img src="llat_vs_cloudiness.png" width = 100%></a>
+                            
+                        </h4>    
+                    </div>
+                    <div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <h4>
+                                <br>vs. Wind Speed
+                                <a href="windspeed.html"><img src="llat_vs_windspeed.png" width = 100%></a>
+                            </h4>    
+                    </div>
+            </div>
+            
         </div>
+
+
+        
+        
         
     
     
