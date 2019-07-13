@@ -4,3 +4,6 @@ Here I built a simple web presentation of Weather Correlation data. I used HTML,
 Deployed site available here: https://olegmrnv.github.io/weather_correlations/ or download repo and open index.html
 
 Initial work on obtaining data, cleaning and analyzing has been performed in following project: https://github.com/olegmrnv/Weather-correlations
+
+
+![graphs](page_view.JPG "page view")
